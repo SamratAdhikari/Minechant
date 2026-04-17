@@ -24,7 +24,7 @@ const page = () => {
                 )
             }
             tabIndex={0}
-            className="flex justify-center items-center mx-auto m-7 w-40 cursor-pointer rounded-2xl p-6 text-white shadow-lg transition-colors ease-in duration-200 bg-[#1C4464] hover:bg-blue-950 focus:outline-none focus:ring-1 border-2 border-white"
+            className="flex justify-center items-center mx-auto m-7 w-full max-w-[240px] cursor-pointer rounded-2xl p-5 sm:p-6 text-white shadow-lg transition-colors ease-in duration-200 bg-[#1C4464] hover:bg-blue-950 focus:outline-none focus:ring-1 border-2 border-white"
         >
             <span className="text-gray-300 text-xl">Calculate</span>
         </button>

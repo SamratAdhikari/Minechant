@@ -25,12 +25,12 @@ const Page = ({ name, level, image }) => {
     };
 
     return (
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center px-1 sm:px-2">
             {name !== "book" && (
                 <>
                     <div
                         onClick={handleClick}
-                        className={`flex flex-wrap cursor-pointer justify-center items-center w-30 h-30 m-1 border-2 rounded-xl ${
+                        className={`flex flex-wrap cursor-pointer justify-center items-center w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 m-2 border-2 rounded-xl ${
                             selected_items.includes(name)
                                 ? `bg-[#305c4c]`
                                 : "bg-[#1C4464] hover:bg-blue-950"
@@ -44,8 +44,8 @@ const Page = ({ name, level, image }) => {
                                 alt={`${name} image here`}
                             />
                             {level && (
-                                <div className="absolute w-8 h-8 flex justify-center items-center -top-3 -right-2 bg-amber-300 rounded-full">
-                                    <span className="text-gray-800 text-xl self-center font-black pl-1 pt-0.5">
+                                <div className="absolute w-6 h-6 sm:w-7 sm:h-7 flex justify-center items-center -top-2 -right-1 bg-amber-300 rounded-full text-xs sm:text-sm">
+                                    <span className="text-gray-800 self-center font-black">
                                         {level}
                                     </span>
                                 </div>
@@ -53,10 +53,7 @@ const Page = ({ name, level, image }) => {
                         </div>
                     </div>
 
-                    <div
-                        className="text-gray-400 text-2xl capitalize mx-auto rounded px-2 max-w-[80%] text-center h-13 flex items-start justify-center"
-                        style={{ lineHeight: "1.1" }}
-                    >
+                    <div className="text-gray-400 text-sm sm:text-lg md:text-xl lg:text-2xl capitalize min-h-12 sm:min-h-14 md:min-h-16 mx-auto rounded px-1 sm:px-2 max-w-full text-center leading-snug">
                         {name.replaceAll("_", " ")}
                     </div>
                 </>

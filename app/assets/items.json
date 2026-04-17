@@ -109,11 +109,6 @@
     },
     {
         "id": 21,
-        "name": "book",
-        "src": "https://res.cloudinary.com/dbmievfdc/image/upload/v1752140164/Enchanted_Book_yqp0ro.png"
-    },
-    {
-        "id": 22,
         "name": "spear",
         "src": "https://res.cloudinary.com/dbmievfdc/image/upload/v1771951753/spear_hl6r5n.png"
     }
