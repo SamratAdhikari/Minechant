@@ -23,13 +23,13 @@
     },
     {
         "id": 5,
-        "name": "crossbow",
-        "src": "https://res.cloudinary.com/dbmievfdc/image/upload/v1752215191/Crossbow_dhxtde.png"
+        "name": "shovel",
+        "src": "https://res.cloudinary.com/dbmievfdc/image/upload/v1752140164/Diamond_Shovel_jqnxvu.png"
     },
     {
         "id": 6,
-        "name": "shovel",
-        "src": "https://res.cloudinary.com/dbmievfdc/image/upload/v1752140164/Diamond_Shovel_jqnxvu.png"
+        "name": "crossbow",
+        "src": "https://res.cloudinary.com/dbmievfdc/image/upload/v1752215191/Crossbow_dhxtde.png"
     },
     {
         "id": 7,
@@ -41,7 +41,6 @@
         "name": "elytra",
         "src": "https://res.cloudinary.com/dbmievfdc/image/upload/v1752140164/Elytra_l7xnjq.png"
     },
-
     {
         "id": 9,
         "name": "fishing_rod",
