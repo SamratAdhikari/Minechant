@@ -21,94 +21,99 @@
     },
     {
         "id": 5,
+        "name": "axe",
+        "src": "https://res.cloudinary.com/dbmievfdc/image/upload/v1780814111/resized_1024_diamond_axe_ilh1lh.png"
+    }
+    {
+        "id": 6,
         "name": "shovel",
         "src": "https://res.cloudinary.com/dbmievfdc/image/upload/v1752140164/Diamond_Shovel_jqnxvu.png"
     },
     {
-        "id": 6,
+        "id": 7,
         "name": "brush",
         "src": "https://res.cloudinary.com/dbmievfdc/image/upload/v1752140162/Brush_hpmf4c.png"
     },
     {
-        "id": 7,
+        "id": 8,
         "name": "elytra",
         "src": "https://res.cloudinary.com/dbmievfdc/image/upload/v1752140164/Elytra_l7xnjq.png"
     },
 
     {
-        "id": 8,
+        "id": 9,
         "name": "fishing_rod",
         "src": "https://res.cloudinary.com/dbmievfdc/image/upload/v1752140164/Fishing_Rod_ryexs7.png"
     },
 
     {
-        "id": 9,
+        "id": 10,
         "name": "flint_and_steel",
         "src": "https://res.cloudinary.com/dbmievfdc/image/upload/v1752140163/Flint_And_Steel_hegm72.png"
     },
     {
-        "id": 10,
+        "id": 11,
         "name": "mace",
         "src": "https://res.cloudinary.com/dbmievfdc/image/upload/v1752140163/Mace_a3uzdd.png"
     },
     {
-        "id": 11,
+        "id": 12,
         "name": "helmet",
         "src": "https://res.cloudinary.com/dbmievfdc/image/upload/v1752140162/Diamond_Helmet_q0euic.png"
     },
 
     {
-        "id": 12,
+        "id": 13,
         "name": "leggings",
         "src": "https://res.cloudinary.com/dbmievfdc/image/upload/v1752140163/Diamond_Leggings_aklenn.png"
     },
 
     {
-        "id": 13,
+        "id": 14,
         "name": "trident",
         "src": "https://res.cloudinary.com/dbmievfdc/image/upload/v1752140163/Trident_dggcfy.png"
     },
 
     {
-        "id": 14,
+        "id": 15,
         "name": "chestplate",
         "src": "https://res.cloudinary.com/dbmievfdc/image/upload/v1752140163/Diamond_Chestplate_ws3mk6.png"
     },
 
     {
-        "id": 15,
+        "id": 16,
         "name": "boots",
         "src": "https://res.cloudinary.com/dbmievfdc/image/upload/v1752140163/Diamond_Boots_tdemru.png"
     },
 
     {
-        "id": 16,
+        "id": 17,
         "name": "shield",
         "src": "https://res.cloudinary.com/dbmievfdc/image/upload/v1752140163/Shield_cbwkez.png"
     },
 
     {
-        "id": 17,
+        "id": 18,
         "name": "carved_pumpkin",
         "src": "https://res.cloudinary.com/dbmievfdc/image/upload/v1752140163/Carved_Pumpkin_imfkyt.png"
     },
     {
-        "id": 18,
+        "id": 19,
         "name": "shears",
         "src": "https://res.cloudinary.com/dbmievfdc/image/upload/v1752140162/Shears_ldd6w7.png"
     },
     {
-        "id": 19,
+        "id": 20,
         "name": "bow",
         "src": "https://res.cloudinary.com/dbmievfdc/image/upload/v1752215191/Bow_qbp1wk.png"
     },
     {
-        "id": 20,
+        "id": 21,
         "name": "turtle_shell",
         "src": "https://res.cloudinary.com/dbmievfdc/image/upload/v1752215218/Turtle_Helmet_gqhqri.png"
     },
     {
-        "id": 21,
+        "id": 22,
         "name": "spear",
         "src": "https://res.cloudinary.com/dbmievfdc/image/upload/v1771951753/spear_hl6r5n.png"
     }
