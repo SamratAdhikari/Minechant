@@ -99,7 +99,10 @@ const merge = (target, sacrifice) => {
     return {
         type: target.type,
         item_name: target.item_name,
-        label: target.label,
+        label:
+            target.type === "book"
+                ? bookLabel(resultEnchants)
+                : target.label,
         enchantments: resultEnchants,
         work_count: Math.max(target.work_count, sacrifice.work_count) + 1,
         total_xp:
@@ -113,6 +116,14 @@ const merge = (target, sacrifice) => {
         },
     };
 };
+
+// Full name of a (possibly combined) book, e.g. "Book: sharpness 5 + unbreaking 3"
+const bookLabel = (enchants) =>
+    "Book: " +
+    Object.entries(enchants)
+        .sort(([a], [b]) => a.localeCompare(b))
+        .map(([k, v]) => `${k.replace(/_/g, " ")} ${v}`)
+        .join(" + ");
 
 // ─── 4. RECURSIVE SOLVER WITH MEMOIZATION ───────────────────────────────────
 // FIX 3: Stable node key includes total_xp so nodes reached via different
@@ -217,7 +228,7 @@ export const calculateEnchantmentPlan = (baseItemName, selectedEnchants) => {
     const books = parsedEnchants.map(({ name, level }) => ({
         type: "book",
         item_name: "book",
-        label: `Book: ${name.replace(/_/g, " ")} ${level}`,
+        label: bookLabel({ [name]: level }),
         enchantments: { [name]: level },
         work_count: 0,
         total_xp: 0,
