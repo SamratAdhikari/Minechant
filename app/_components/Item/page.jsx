@@ -9,56 +9,45 @@ import {
     clearEnchant,
 } from "../../redux/slices/selectionSlice";
 
-const Page = ({ name, level, image }) => {
+const Page = ({ name, image }) => {
     const dispatch = useDispatch();
     const { selected_items } = useSelector((state) => state.selection);
+    const selected = selected_items.includes(name);
+    const label = name.replaceAll("_", " ");
 
-    // determine if the item is selected
     const handleClick = () => {
-        if (!selected_items.includes(name)) {
-            dispatch(clearEnchant());
-            dispatch(selectItem(name));
-        } else {
-            dispatch(clearEnchant());
-            dispatch(removeItem());
-        }
+        dispatch(clearEnchant());
+        dispatch(selected ? removeItem() : selectItem(name));
     };
 
     return (
-        <div className="flex flex-col justify-center items-center px-1 sm:px-2">
-            {name !== "book" && (
-                <>
-                    <div
-                        onClick={handleClick}
-                        className={`flex flex-wrap cursor-pointer justify-center items-center w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 m-2 border-2 rounded-xl ${
-                            selected_items.includes(name)
-                                ? `bg-[#305c4c]`
-                                : "bg-[#1C4464] hover:bg-blue-950"
-                        } transition-all duration-100 ease-in-out`}
-                    >
-                        <div className="relative">
-                            <Image
-                                width={80}
-                                height={80}
-                                src={image}
-                                alt={`${name} image here`}
-                            />
-                            {level && (
-                                <div className="absolute w-6 h-6 sm:w-7 sm:h-7 flex justify-center items-center -top-2 -right-1 bg-amber-300 rounded-full text-xs sm:text-sm">
-                                    <span className="text-gray-800 self-center font-black">
-                                        {level}
-                                    </span>
-                                </div>
-                            )}
-                        </div>
-                    </div>
-
-                    <div className="text-gray-400 text-sm sm:text-lg md:text-xl lg:text-2xl capitalize min-h-12 sm:min-h-14 md:min-h-16 mx-auto rounded px-1 sm:px-2 max-w-full text-center leading-snug">
-                        {name.replaceAll("_", " ")}
-                    </div>
-                </>
+        <button
+            type="button"
+            onClick={handleClick}
+            aria-pressed={selected}
+            className={`bevel group flex flex-col items-center justify-center gap-1 min-h-28 p-2 rounded-md border-2 cursor-pointer transition-all duration-150 ease-out ${
+                selected
+                    ? "bg-surface-3 border-primary"
+                    : "bg-surface-2 border-line hover:border-ink-dim hover:-translate-y-0.5"
+            }`}
+        >
+            <Image
+                width={56}
+                height={56}
+                sizes="56px"
+                src={image}
+                alt=""
+                className="[image-rendering:pixelated] transition-transform group-hover:scale-110"
+            />
+            <span className="text-sm capitalize text-center leading-tight text-ink">
+                {label}
+            </span>
+            {selected && (
+                <span className="text-xs font-semibold text-primary" aria-hidden="true">
+                    ✓ Selected
+                </span>
             )}
-        </div>
+        </button>
     );
 };
 

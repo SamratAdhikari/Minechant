@@ -54,13 +54,16 @@ const faqSchema = {
 export default function Home() {
     return (
         <Provider store={store}>
-            <div className="flex flex-col items-center justify-center gap-4 bg-[#305c4c] min-h-screen px-4 sm:px-6">
+            <div className="min-h-screen px-4 sm:px-6 pb-0">
                 <Title />
-                <main>
+                <main className="w-full max-w-5xl mx-auto flex flex-col gap-5">
                     <ItemContainer />
                     <EnchantmentContainer />
                     <CalculateButton />
                 </main>
+                <footer className="py-8 text-center text-xs text-ink-dim">
+                    Not affiliated with Mojang or Microsoft.
+                </footer>
                 <SplashScreen />
                 {/* SEO Content for crawlers */}
                 <SeoContent />

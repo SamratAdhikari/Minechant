@@ -47,14 +47,6 @@ export const metadata = {
         title: "Minechant - Minecraft Enchantment Optimizer & Anvil Calculator",
         description:
             "Optimize your Minecraft enchantments with Minechant - the ultimate anvil calculator. Calculate XP costs, combine enchanted books, and plan the most efficient enchantment strategies.",
-        images: [
-            {
-                url: "/og-image.png",
-                width: 1200,
-                height: 630,
-                alt: "Minechant - Minecraft Enchantment Optimizer",
-            },
-        ],
     },
 
     // Twitter Card
@@ -64,7 +56,6 @@ export const metadata = {
         description:
             "Optimize your Minecraft enchantments with Minechant - the ultimate anvil calculator. Calculate XP costs and plan optimal enchantments.",
         creator: "@minechant",
-        images: ["/og-image.png"],
     },
 
     // Robots
@@ -116,11 +107,6 @@ export const jsonLd = {
         "@type": "Offer",
         price: "0",
         priceCurrency: "USD",
-    },
-    aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "4.8",
-        ratingCount: "150",
     },
 };
 

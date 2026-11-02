@@ -81,6 +81,10 @@ export const POST = handleApi(async (request) => {
       );
     }
 
+    if (plan.error) {
+      return NextResponse.json({ error: plan.error }, { status: 400 });
+    }
+
     const result = [
       ...plan.steps,
       `Total XP required: ${plan.totalXp}`,

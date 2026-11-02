@@ -14,29 +14,74 @@
     font-style: normal;
 }
 
-:root {
-    --background: #305c4c;
-    --foreground: #ededed;
-}
-
-@theme inline {
-    --color-background: var(--background);
-    --color-foreground: var(--foreground);
+@theme {
+    --color-bg: #161a17;
+    --color-surface: #222823;
+    --color-surface-2: #2d352f;
+    --color-surface-3: #3a443c;
+    --color-line: #46524a;
+    --color-primary: #7fe35a;
+    --color-primary-ink: #10260a;
+    --color-accent: #b48bff;
+    --color-warning: #f5c542;
+    --color-danger: #ff7b6e;
+    --color-ink: #f2f4f1;
+    --color-ink-dim: #b4beb6;
     --font-sans: var(--font-geist-sans);
     --font-mono: var(--font-geist-mono);
 }
 
-/* @media (prefers-color-scheme: dark) {
-    :root {
-        --background: #0a0a0a;
-        --foreground: #ededed;
-    }
-} */
+:root {
+    color-scheme: dark;
+}
 
 body {
-    background: var(--background);
-    color: var(--foreground);
-    font-family: "Minecraft_Text", Arial, Helvetica, sans-serif;
+    background:
+        radial-gradient(1100px 500px at 50% -10%, rgba(127, 227, 90, 0.10), transparent 60%),
+        var(--color-bg);
+    color: var(--color-ink);
+    font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+}
+
+/* Inventory-slot bevel used by tiles and panels */
+.bevel {
+    box-shadow:
+        inset 2px 2px 0 rgba(255, 255, 255, 0.08),
+        inset -2px -2px 0 rgba(0, 0, 0, 0.45);
+}
+
+.glint {
+    background-image: linear-gradient(
+        110deg,
+        transparent 30%,
+        rgba(180, 139, 255, 0.35) 50%,
+        transparent 70%
+    );
+    background-size: 250% 100%;
+    animation: glint 2.4s linear infinite;
+}
+
+@keyframes glint {
+    from { background-position: 150% 0; }
+    to { background-position: -50% 0; }
+}
+
+@keyframes pop {
+    from { opacity: 0; transform: translateY(8px) scale(0.98); }
+    to { opacity: 1; transform: none; }
+}
+
+.pop-in { animation: pop 180ms ease-out; }
+
+:focus-visible {
+    outline: 3px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .glint, .pop-in { animation: none; }
+    * { transition-duration: 0.01ms !important; }
 }
 
 .font-title {

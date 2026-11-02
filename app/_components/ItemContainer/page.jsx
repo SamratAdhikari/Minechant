@@ -5,16 +5,22 @@ import items from "../../assets/items.json";
 
 const page = () => {
     return (
-        <div className="flex flex-col w-full max-w-[1200px] md:w-[70%] bg-[#31302f] border-2 rounded-md shadow-lg shadow-gray-500/50 p-4 my-4 mx-auto">
-            <span className="text-2xl sm:text-3xl text-gray-300 mx-4 sm:mx-10 my-4">
-                Select an Item to Enchant
-            </span>
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4 gap-y-6 sm:gap-y-8 justify-items-center">
-                {items.map((item) => (
-                    <Item key={item.id} name={item.name} image={item.src} />
-                ))}
+        <section
+            aria-labelledby="items-heading"
+            className="bevel w-full bg-surface border border-line rounded-lg p-4 sm:p-6"
+        >
+            <h2 id="items-heading" className="text-xl sm:text-2xl font-semibold">
+                <span className="font-title text-primary mr-2">1</span>
+                Select an item to enchant
+            </h2>
+            <div className="mt-4 grid grid-cols-2 min-[420px]:grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-3">
+                {items
+                    .filter((item) => item.name !== "book")
+                    .map((item) => (
+                        <Item key={item.id} name={item.name} image={item.src} />
+                    ))}
             </div>
-        </div>
+        </section>
     );
 };
 
