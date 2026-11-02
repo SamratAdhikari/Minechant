@@ -12,5 +12,11 @@ export default function sitemap() {
             changeFrequency: "weekly",
             priority: 1,
         },
+        {
+            url: `${baseUrl}/banner`,
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.8,
+        },
     ];
 }

@@ -1,4 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
+import Link from "next/link";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -123,6 +124,17 @@ export default function RootLayout({ children }) {
                 className={`${geistSans.variable} ${geistMono.variable} 
                 antialiased `}
             >
+                <nav
+                    aria-label="Main"
+                    className="flex justify-center gap-2 pt-4 px-4 text-sm"
+                >
+                    <Link href="/" className="min-h-11 inline-flex items-center px-4 rounded-md bg-surface border border-line hover:border-primary">
+                        Anvil planner
+                    </Link>
+                    <Link href="/banner" className="min-h-11 inline-flex items-center px-4 rounded-md bg-surface border border-line hover:border-primary">
+                        Banner designer
+                    </Link>
+                </nav>
                 {children}
             </body>
         </html>

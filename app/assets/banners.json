@@ -1,0 +1,339 @@
+{
+    "dyes": [
+        {
+            "id": "white",
+            "name": "White",
+            "hex": "#F9FFFE"
+        },
+        {
+            "id": "light_gray",
+            "name": "Light Gray",
+            "hex": "#9D9D97"
+        },
+        {
+            "id": "gray",
+            "name": "Gray",
+            "hex": "#474F52"
+        },
+        {
+            "id": "black",
+            "name": "Black",
+            "hex": "#1D1D21"
+        },
+        {
+            "id": "brown",
+            "name": "Brown",
+            "hex": "#835432"
+        },
+        {
+            "id": "red",
+            "name": "Red",
+            "hex": "#B02E26"
+        },
+        {
+            "id": "orange",
+            "name": "Orange",
+            "hex": "#F9801D"
+        },
+        {
+            "id": "yellow",
+            "name": "Yellow",
+            "hex": "#FED83D"
+        },
+        {
+            "id": "lime",
+            "name": "Lime",
+            "hex": "#80C71F"
+        },
+        {
+            "id": "green",
+            "name": "Green",
+            "hex": "#5E7C16"
+        },
+        {
+            "id": "cyan",
+            "name": "Cyan",
+            "hex": "#169C9C"
+        },
+        {
+            "id": "light_blue",
+            "name": "Light Blue",
+            "hex": "#3AB3DA"
+        },
+        {
+            "id": "blue",
+            "name": "Blue",
+            "hex": "#3C44AA"
+        },
+        {
+            "id": "purple",
+            "name": "Purple",
+            "hex": "#8932B8"
+        },
+        {
+            "id": "magenta",
+            "name": "Magenta",
+            "hex": "#C74EBD"
+        },
+        {
+            "id": "pink",
+            "name": "Pink",
+            "hex": "#F38BAA"
+        }
+    ],
+    "patterns": [
+        {
+            "id": "stripe_top",
+            "name": "Top stripe",
+            "item": null,
+            "game": "Chief"
+        },
+        {
+            "id": "stripe_bottom",
+            "name": "Bottom stripe",
+            "item": null,
+            "game": "Bottom Stripe"
+        },
+        {
+            "id": "stripe_left",
+            "name": "Left stripe",
+            "item": null,
+            "game": "Pale Dexter"
+        },
+        {
+            "id": "stripe_right",
+            "name": "Right stripe",
+            "item": null,
+            "game": "Pale Sinister"
+        },
+        {
+            "id": "stripe_center",
+            "name": "Center stripe",
+            "item": null,
+            "game": "Pale"
+        },
+        {
+            "id": "stripe_middle",
+            "name": "Middle stripe",
+            "item": null,
+            "game": "Fess"
+        },
+        {
+            "id": "stripe_downright",
+            "name": "Diagonal stripe",
+            "item": null,
+            "game": "Bend"
+        },
+        {
+            "id": "stripe_downleft",
+            "name": "Diagonal stripe (mirrored)",
+            "item": null,
+            "game": "Bend Sinister"
+        },
+        {
+            "id": "small_stripes",
+            "name": "Small stripes",
+            "item": null,
+            "game": "Paly"
+        },
+        {
+            "id": "cross",
+            "name": "Diagonal cross",
+            "item": null,
+            "game": "Saltire"
+        },
+        {
+            "id": "straight_cross",
+            "name": "Straight cross",
+            "item": null,
+            "game": "Cross"
+        },
+        {
+            "id": "border",
+            "name": "Border",
+            "item": null,
+            "game": "Bordure"
+        },
+        {
+            "id": "curly_border",
+            "name": "Curly border",
+            "item": "Bordure Indented banner pattern (Paper + Vines)",
+            "game": "Bordure Indented"
+        },
+        {
+            "id": "bricks",
+            "name": "Bricks",
+            "item": "Field Masoned banner pattern (Paper + Bricks)",
+            "game": "Field Masoned"
+        },
+        {
+            "id": "circle",
+            "name": "Circle",
+            "item": null,
+            "game": "Roundel"
+        },
+        {
+            "id": "rhombus",
+            "name": "Rhombus",
+            "item": null,
+            "game": "Lozenge"
+        },
+        {
+            "id": "gradient",
+            "name": "Gradient (top)",
+            "item": null,
+            "game": "Gradient"
+        },
+        {
+            "id": "gradient_up",
+            "name": "Gradient (bottom)",
+            "item": null,
+            "game": "Base Gradient"
+        },
+        {
+            "id": "half_horizontal",
+            "name": "Top half",
+            "item": null,
+            "game": "Per Fess"
+        },
+        {
+            "id": "half_horizontal_bottom",
+            "name": "Bottom half",
+            "item": null,
+            "game": "Per Fess Inverted"
+        },
+        {
+            "id": "half_vertical",
+            "name": "Left half",
+            "item": null,
+            "game": "Per Pale"
+        },
+        {
+            "id": "half_vertical_right",
+            "name": "Right half",
+            "item": null,
+            "game": "Per Pale Inverted"
+        },
+        {
+            "id": "diagonal_left",
+            "name": "Diagonal half (top left)",
+            "item": null,
+            "game": "Per Bend Sinister"
+        },
+        {
+            "id": "diagonal_right",
+            "name": "Diagonal half (bottom right)",
+            "item": null,
+            "game": "Per Bend"
+        },
+        {
+            "id": "diagonal_up_left",
+            "name": "Diagonal half (bottom left)",
+            "item": null,
+            "game": "Per Bend Inverted"
+        },
+        {
+            "id": "diagonal_up_right",
+            "name": "Diagonal half (top right)",
+            "item": null,
+            "game": "Per Bend Sinister Inverted"
+        },
+        {
+            "id": "square_top_left",
+            "name": "Corner (top left)",
+            "item": null,
+            "game": "Chief Dexter Canton"
+        },
+        {
+            "id": "square_top_right",
+            "name": "Corner (top right)",
+            "item": null,
+            "game": "Chief Sinister Canton"
+        },
+        {
+            "id": "square_bottom_left",
+            "name": "Corner (bottom left)",
+            "item": null,
+            "game": "Base Dexter Canton"
+        },
+        {
+            "id": "square_bottom_right",
+            "name": "Corner (bottom right)",
+            "item": null,
+            "game": "Base Sinister Canton"
+        },
+        {
+            "id": "triangle_top",
+            "name": "Inverted chevron",
+            "item": null,
+            "game": "Inverted Chevron"
+        },
+        {
+            "id": "triangle_bottom",
+            "name": "Chevron",
+            "item": null,
+            "game": "Chevron"
+        },
+        {
+            "id": "triangles_top",
+            "name": "Top zigzag",
+            "item": null,
+            "game": "Chief Indented"
+        },
+        {
+            "id": "triangles_bottom",
+            "name": "Bottom zigzag",
+            "item": null,
+            "game": "Base Indented"
+        },
+        {
+            "id": "creeper",
+            "name": "Creeper face",
+            "item": "Creeper Charge banner pattern (Paper + Creeper Head)",
+            "game": "Creeper Charge"
+        },
+        {
+            "id": "skull",
+            "name": "Skull",
+            "item": "Skull Charge banner pattern (Paper + Wither Skeleton Skull)",
+            "game": "Skull Charge"
+        },
+        {
+            "id": "flower",
+            "name": "Flower",
+            "item": "Flower Charge banner pattern (Paper + Oxeye Daisy)",
+            "game": "Flower Charge"
+        },
+        {
+            "id": "mojang",
+            "name": "Mojang logo",
+            "item": "Thing banner pattern (Paper + Enchanted Golden Apple)",
+            "game": "Thing"
+        },
+        {
+            "id": "piglin",
+            "name": "Snout",
+            "item": "Snout banner pattern (Bastion Remnant chest loot)",
+            "game": "Snout"
+        },
+        {
+            "id": "globe",
+            "name": "Globe",
+            "item": "Globe banner pattern (Master Cartographer trade, 8 Emeralds)",
+            "game": "Globe"
+        },
+        {
+            "id": "flow",
+            "name": "Flow",
+            "item": "Flow banner pattern (Trial Chambers ominous vault)",
+            "game": "Flow"
+        },
+        {
+            "id": "guster",
+            "name": "Guster",
+            "item": "Guster banner pattern (Trial Chambers vault)",
+            "game": "Guster"
+        }
+    ],
+    "maxLayers": 6
+}
